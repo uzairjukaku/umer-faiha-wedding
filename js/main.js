@@ -126,9 +126,9 @@
       var s = document.createElement('canvas'), n = 32;
       s.width = s.height = n;
       var x = s.getContext('2d'), g = x.createRadialGradient(n / 2, n / 2, 0, n / 2, n / 2, n / 2);
-      g.addColorStop(0, 'rgba(255,246,214,1)');
-      g.addColorStop(.25, 'rgba(244,214,140,.85)');
-      g.addColorStop(1, 'rgba(214,176,100,0)');
+      g.addColorStop(0, 'rgba(190,145,60,1)');
+      g.addColorStop(.25, 'rgba(176,132,52,.8)');
+      g.addColorStop(1, 'rgba(168,127,57,0)');
       x.fillStyle = g;
       x.fillRect(0, 0, n, n);
       return s;
