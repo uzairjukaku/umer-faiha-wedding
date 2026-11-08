@@ -1,0 +1,3 @@
+Add your background music here as:  music.mp3
+The music button appears on the site automatically once the file exists.
+Tip: keep it under ~3 MB (e.g. 96-128 kbps MP3) so it loads fast on mobile data.

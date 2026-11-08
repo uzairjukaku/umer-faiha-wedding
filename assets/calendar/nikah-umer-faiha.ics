@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Umer Azzam & Faiha//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nikah-20261202-umer-faiha@invitation
+DTSTAMP:20261108T000000Z
+DTSTART:20261202T113000Z
+DTEND:20261202T133000Z
+SUMMARY:Nikah — Umer Azzam & Faiha
+LOCATION:M.M. Siddique Shadi Hall\, Bunder Road 3rd Cross\, Bhatkal
+DESCRIPTION:In sha Allah. Marriage of Umer Azzam (S/O Azimul Hasan Ruknud
+ din (Baida)) and Faiha (D/O Mohammed Fahim Hafizka).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Nikah of Umer Azzam & Faiha is tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR
