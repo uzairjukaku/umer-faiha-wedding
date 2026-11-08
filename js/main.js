@@ -84,14 +84,6 @@
   }
 
   /* ------------------------------------------------------------------ intro */
-  (function tassels() {
-    var box = $('.valance__tassels');
-    if (!box) return;
-    var html = '';
-    for (var i = 1; i < 12; i++) html += '<i class="tassel" style="left:' + (i * 100 / 12).toFixed(3) + '%;--d:' + (-rnd(0, 3)).toFixed(2) + 's"></i>';
-    box.innerHTML = html;
-  })();
-
   var ready = Promise.race([document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve(), wait(2500)]);
   var played = false;
 
@@ -289,8 +281,8 @@
 
   /* ------------------------------------------------------------------- start */
   if (intro) {
-    intro.addEventListener('click', openInvite);                        // tap = open sooner
-    Promise.all([ready, wait(reduce ? 0 : 1500)]).then(openInvite);     // otherwise open on its own
+    intro.addEventListener('click', openInvite);                        // tap to open
+    if (reduce) ready.then(openInvite);                                  // no animation wanted: go straight in
   } else {
     root.classList.add('opened');
     playHero();

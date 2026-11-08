@@ -24,6 +24,9 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/alex-brush-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/marcellus-sc-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/door-frame.webp" as="image">
+  <link rel="preload" href="assets/img/door-l.webp" as="image">
+  <link rel="preload" href="assets/img/door-r.webp" as="image">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__inviteReady)document.documentElement.classList.remove('js')},5000)</script>
 </head>
@@ -82,21 +85,14 @@
     </defs>
   </svg>
 
-  <!-- ───────────── Opening: golden satin curtains ───────────── -->
+  <!-- ───────────── Opening: rendered plaster lattice doors ───────────── -->
   <div class="intro" id="intro" aria-hidden="true">
-    <div class="curtain curtain--l"><span class="curtain__band"></span></div>
-    <div class="curtain curtain--r"><span class="curtain__band"></span></div>
-    <div class="valance">
-      <svg viewBox="0 0 1000 120" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="vel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b871"/><stop offset=".75" stop-color="#ecd49a"/><stop offset="1" stop-color="#c9a45c"/></linearGradient>
-        </defs>
-        <path d="M0 0H1000V78Q958 116 916 78Q875 116 833 78Q791 116 750 78Q708 116 666 78Q625 116 583 78Q541 116 500 78Q458 116 416 78Q375 116 333 78Q291 116 250 78Q208 116 166 78Q125 116 83 78Q41 116 0 78Z" fill="url(#vel)"/>
-        <path d="M0 78Q41 116 83 78Q125 116 166 78Q208 116 250 78Q291 116 333 78Q375 116 416 78Q458 116 500 78Q541 116 583 78Q625 116 666 78Q708 116 750 78Q791 116 833 78Q875 116 916 78Q958 116 1000 78" fill="none" stroke="#7a5719" stroke-width="3" vector-effect="non-scaling-stroke"/>
-      </svg>
-      <span class="valance__band"></span>
-      <div class="valance__tassels"></div>
+    <div class="doors">
+      <img class="doors__frame" src="assets/img/door-frame.webp" alt="" decoding="sync">
+      <div class="door door--l"><img src="assets/img/door-l.webp" alt="" decoding="sync"></div>
+      <div class="door door--r"><img src="assets/img/door-r.webp" alt="" decoding="sync"></div>
     </div>
+    <p class="intro__hint">Tap to open</p>
   </div>
 
   <main id="main">
